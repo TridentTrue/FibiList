@@ -1,0 +1,13 @@
+﻿@model List<Ingredient>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<ul>
+    @foreach (Ingredient ingredient in Model)
+	{
+		<li>@ingredient.Name</li>
+	}
+</ul>

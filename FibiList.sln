@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30104.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FibiList.Data", "FibiList.Data\FibiList.Data.csproj", "{B8A55610-B3A1-44E4-B5A9-E73C9C835802}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FibiList.Domain", "src\FibiList.Domain\FibiList.Domain.csproj", "{B8A55610-B3A1-44E4-B5A9-E73C9C835802}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FibiList.MVC", "FibiList.MVC\FibiList.MVC.csproj", "{3E45DB13-4903-4898-9EB8-CD2AB674F4A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FibiList.MVC", "src\FibiList.MVC\FibiList.MVC.csproj", "{3E45DB13-4903-4898-9EB8-CD2AB674F4A7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FibiList.Infrastructure", "src\FibiList.Infrastructure\FibiList.Infrastructure.csproj", "{1F353E61-C479-42F0-A729-6FF2C2D2EB58}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{3E45DB13-4903-4898-9EB8-CD2AB674F4A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E45DB13-4903-4898-9EB8-CD2AB674F4A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E45DB13-4903-4898-9EB8-CD2AB674F4A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F353E61-C479-42F0-A729-6FF2C2D2EB58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F353E61-C479-42F0-A729-6FF2C2D2EB58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F353E61-C479-42F0-A729-6FF2C2D2EB58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F353E61-C479-42F0-A729-6FF2C2D2EB58}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

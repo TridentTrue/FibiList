@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace FibiList.MVC.Data.Migrations
 {
-	[DbContext(typeof(ApplicationDbContext))]
+	//[DbContext(typeof(ApplicationDbContext))]
 	[Migration("00000000000000_CreateIdentitySchema")]
 	partial class CreateIdentitySchema
 	{
