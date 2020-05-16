@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FibiList.Infrastructure.Migrations
 {
     [DbContext(typeof(GroceriesContext))]
-    [Migration("20200513221719_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20200516161754_PopulateUnits")]
+    partial class PopulateUnits
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -172,9 +172,7 @@ namespace FibiList.Infrastructure.Migrations
             modelBuilder.Entity("FibiList.Domain.Entities.Section", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("int");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -189,14 +187,17 @@ namespace FibiList.Infrastructure.Migrations
             modelBuilder.Entity("FibiList.Domain.Entities.Unit", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("int");
 
                     b.Property<string>("PluralDescriptor")
                         .IsRequired()
                         .HasColumnType("nvarchar(20)")
                         .HasMaxLength(20);
+
+                    b.Property<string>("ShortDescriptor")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(5)")
+                        .HasMaxLength(5);
 
                     b.Property<string>("SingularDescriptor")
                         .IsRequired()

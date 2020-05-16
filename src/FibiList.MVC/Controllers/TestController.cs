@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using FibiList.Domain.Entities;
 using FibiList.Infrastructure.Persistence;
 using Microsoft.AspNetCore.Mvc;
+using FibiList.Domain.Enums;
 
 namespace FibiList.MVC.Controllers
 {
@@ -15,6 +16,11 @@ namespace FibiList.MVC.Controllers
         public TestController(GroceriesContext context)
         {
             _context = context;
+        }
+
+        public JsonResult GetUnit()
+        {
+            return Json(_context.Units.Find((int)Units.litre));
         }
 
         public IActionResult Index()

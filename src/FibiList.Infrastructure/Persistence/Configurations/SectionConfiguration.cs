@@ -8,7 +8,7 @@ namespace FibiList.Infrastructure.Persistence.Configurations
 	{
 		public void Configure(EntityTypeBuilder<Section> builder)
 		{
-			builder.Property(s => s.Id).IsRequired();
+			builder.Property(s => s.Id).IsRequired().ValueGeneratedNever();
 			builder.Property(s => s.Name).IsRequired().HasMaxLength(50);
 		}
 	}

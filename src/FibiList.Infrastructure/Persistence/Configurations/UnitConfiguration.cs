@@ -8,7 +8,8 @@ namespace FibiList.Infrastructure.Persistence.Configurations
 	{
 		public void Configure(EntityTypeBuilder<Unit> builder)
 		{
-			builder.Property(u => u.Id).IsRequired();
+			builder.Property(u => u.Id).IsRequired().ValueGeneratedNever();
+			builder.Property(u => u.ShortDescriptor).IsRequired().HasMaxLength(5);
 			builder.Property(u => u.SingularDescriptor).IsRequired().HasMaxLength(20);
 			builder.Property(u => u.PluralDescriptor).IsRequired().HasMaxLength(20);
 		}

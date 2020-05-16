@@ -26,8 +26,7 @@ namespace FibiList.Infrastructure.Migrations
                 name: "Sections",
                 columns: table => new
                 {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Id = table.Column<int>(nullable: false),
                     Name = table.Column<string>(maxLength: 50, nullable: false)
                 },
                 constraints: table =>
@@ -39,8 +38,8 @@ namespace FibiList.Infrastructure.Migrations
                 name: "Units",
                 columns: table => new
                 {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Id = table.Column<int>(nullable: false),
+                    ShortDescriptor = table.Column<string>(maxLength: 5, nullable: false),
                     SingularDescriptor = table.Column<string>(maxLength: 20, nullable: false),
                     PluralDescriptor = table.Column<string>(maxLength: 20, nullable: false)
                 },
