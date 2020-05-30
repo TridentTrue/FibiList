@@ -14,7 +14,9 @@ namespace FibiList.Domain.Entities
 
 		public Guid Id { get; set; }
 		public string Name { get; set; }
+		public int? UnitId { get; set; }
 		public Unit Unit { get; set; }
+		public int? SectionId { get; set; }
 		public Section Section { get; set; }
 
 		public ICollection<MealIngredient> MealIngredients { get; set; }

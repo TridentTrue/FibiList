@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FibiList.Domain\FibiList.Domain.csproj" />
+    <ProjectReference Include="..\FibiList.Infrastructure\FibiList.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
