@@ -7,6 +7,12 @@
   <ItemGroup>
     <Compile Remove="Migrations\20200513221719_InitialCreate.cs" />
     <Compile Remove="Migrations\20200513221719_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20200530212057_AddIdFieldsToUnitAndSection.cs" />
+    <Compile Remove="Migrations\20200530212057_AddIdFieldsToUnitAndSection.Designer.cs" />
+    <Compile Remove="Migrations\20200530212841_AddIdFieldsToIngredientDDLs.cs" />
+    <Compile Remove="Migrations\20200530212841_AddIdFieldsToIngredientDDLs.Designer.cs" />
+    <Compile Remove="Migrations\20200530212939_AddIdFieldsToIngredientDDLs.cs" />
+    <Compile Remove="Migrations\20200530212939_AddIdFieldsToIngredientDDLs.Designer.cs" />
     <Compile Remove="Persistence\Migrations\20200513215901_InitialCreate.cs" />
     <Compile Remove="Persistence\Migrations\20200513215901_InitialCreate.Designer.cs" />
   </ItemGroup>
