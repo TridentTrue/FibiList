@@ -13,6 +13,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using FibiList.Infrastructure.Persistence;
+using FibiList.Application;
+using FibiList.Application.Interfaces;
 
 namespace FibiList.MVC
 {
@@ -29,6 +31,7 @@ namespace FibiList.MVC
 		public void ConfigureServices(IServiceCollection services)
 		{
 			services.AddDbContext<GroceriesContext>(options => options.UseSqlServer(Configuration.GetConnectionString("FibiListConnection")));
+			services.AddScoped<IIngredientRepository, IngredientRepository>();
 			//services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
 			//	.AddEntityFrameworkStores<GroceriesContext>();
 			services.AddControllersWithViews();

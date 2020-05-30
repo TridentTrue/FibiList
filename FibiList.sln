@@ -9,6 +9,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FibiList.MVC", "src\FibiLis
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FibiList.Infrastructure", "src\FibiList.Infrastructure\FibiList.Infrastructure.csproj", "{1F353E61-C479-42F0-A729-6FF2C2D2EB58}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FibiList.Application", "src\FibiList.Application\FibiList.Application.csproj", "{0A92341C-7675-474B-B580-ACA89BA8D92A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B5E815B3-05E2-4FE0-8B2A-7725AE93639E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{82BDCC52-49B2-4DEE-9449-5385E9212BF6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,9 +33,19 @@ Global
 		{1F353E61-C479-42F0-A729-6FF2C2D2EB58}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F353E61-C479-42F0-A729-6FF2C2D2EB58}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F353E61-C479-42F0-A729-6FF2C2D2EB58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A92341C-7675-474B-B580-ACA89BA8D92A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A92341C-7675-474B-B580-ACA89BA8D92A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A92341C-7675-474B-B580-ACA89BA8D92A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A92341C-7675-474B-B580-ACA89BA8D92A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B8A55610-B3A1-44E4-B5A9-E73C9C835802} = {B5E815B3-05E2-4FE0-8B2A-7725AE93639E}
+		{3E45DB13-4903-4898-9EB8-CD2AB674F4A7} = {B5E815B3-05E2-4FE0-8B2A-7725AE93639E}
+		{1F353E61-C479-42F0-A729-6FF2C2D2EB58} = {B5E815B3-05E2-4FE0-8B2A-7725AE93639E}
+		{0A92341C-7675-474B-B580-ACA89BA8D92A} = {B5E815B3-05E2-4FE0-8B2A-7725AE93639E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {95134F06-09E9-43D7-A2CE-8BD8FC0624ED}

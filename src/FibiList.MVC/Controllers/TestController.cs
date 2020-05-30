@@ -34,21 +34,29 @@ namespace FibiList.MVC.Controllers
                 {
                     Id = new Guid(),
                     Name = "Cucumber",
+                    UnitId = null,
+                    SectionId = (int)Sections.FruitAndVegetables,
                 });
                 listOfAllIngredients.Add(new Ingredient()
                 {
                     Id = new Guid(),
                     Name = "Milk",
+                    UnitId = (int)Units.litre,
+                    SectionId = (int)Sections.DairyEggsAndChilled,
                 });
                 listOfAllIngredients.Add(new Ingredient()
                 {
                     Id = new Guid(),
                     Name = "Cheese",
+                    UnitId = (int)Units.gram,
+                    SectionId = (int)Sections.DairyEggsAndChilled,
                 });
                 listOfAllIngredients.Add(new Ingredient()
                 {
                     Id = new Guid(),
                     Name = "Bread",
+                    UnitId = null,
+                    SectionId = (int)Sections.Bakery,
                 });
 
                 _context.Ingredients.AddRange(listOfAllIngredients);
